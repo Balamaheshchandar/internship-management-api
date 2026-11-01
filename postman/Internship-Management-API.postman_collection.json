@@ -1,0 +1,113 @@
+{
+    "info": {
+      "_postman_id": "c28868e0-2035-4526-925b-af666c61ef69",
+      "name": "Internship Management API",
+      "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "_exporter_id": "59380424",
+      "_collection_link": "https://go.postman.co/collection/59380424-c28868e0-2035-4526-925b-af666c61ef69?source=collection_link"
+    },
+    "item": [
+      {
+        "name": "http://localhost:3000/api/internships/6",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/internships/6",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "internships",
+              "6"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "http://localhost:3000/api/internships/6",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "\r\n{\r\n  \"stipend\": \"15000/month\"\r\n}\r\n\r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/internships/6",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "internships",
+              "6"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "http://localhost:3000/api/internships",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "\r\n{\r\n  \"title\": \"Full Stack Developer Intern\",\r\n  \"company\": \"Tech Solutions\",\r\n  \"location\": \"Coimbatore, Tamil Nadu\",\r\n  \"mode\": \"Remote\",\r\n  \"employment_type\": \"Internship\",\r\n  \"description\": \"Develop backend APIs and frontend applications.\",\r\n  \"skills\": [\"Node.js\", \"Express\", \"React\", \"SQLite\"],\r\n  \"stipend\": \"10000/month\",\r\n  \"application_url\": \"https://example.com/apply\",\r\n  \"duration\": \"3 months\",\r\n  \"is_active\": true\r\n}\r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/internships",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "internships"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "http://localhost:3000/api/internships/1",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/internships/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "internships",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }

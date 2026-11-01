@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Frontend Developer Intern",
+    "company": "BrightWeb Labs",
+    "location": "Coimbatore, Tamil Nadu",
+    "mode": "Hybrid",
+    "employment_type": "Internship",
+    "description": "Build responsive user interfaces and reusable components with the frontend team.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "stipend": "₹8,000/month",
+    "application_url": "https://example.com/apply/frontend",
+    "duration": "3 months",
+    "is_active": true
+  },
+  {
+    "title": "Flutter Developer Intern",
+    "company": "AppNest Technologies",
+    "location": "Coimbatore, Tamil Nadu",
+    "mode": "On-site",
+    "employment_type": "Internship",
+    "description": "Assist with Flutter screens, API integration, and Firebase features.",
+    "skills": [
+      "Dart",
+      "Flutter",
+      "Firebase"
+    ],
+    "stipend": "₹6,000/month",
+    "application_url": "https://example.com/apply/flutter",
+    "duration": "2 months",
+    "is_active": true
+  },
+  {
+    "title": "Python Backend Intern",
+    "company": "DataSpring",
+    "location": "Remote",
+    "mode": "Remote",
+    "employment_type": "Internship",
+    "description": "Develop REST endpoints, write tests, and work with relational databases.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "SQL"
+    ],
+    "stipend": "Unpaid",
+    "application_url": "https://example.com/apply/python",
+    "duration": "8 weeks",
+    "is_active": true
+  },
+  {
+    "title": "UI/UX Design Intern",
+    "company": "PixelCraft Studio",
+    "location": "Chennai, Tamil Nadu",
+    "mode": "Hybrid",
+    "employment_type": "Internship",
+    "description": "Create wireframes, prototypes, and design system components.",
+    "skills": [
+      "Figma",
+      "UI Design",
+      "Prototyping"
+    ],
+    "stipend": "₹5,000/month",
+    "application_url": "https://example.com/apply/design",
+    "duration": "3 months",
+    "is_active": true
+  },
+  {
+    "title": "QA Automation Intern",
+    "company": "QualityWorks",
+    "location": "Remote",
+    "mode": "Remote",
+    "employment_type": "Internship",
+    "description": "Help write automated tests and document software defects.",
+    "skills": [
+      "JavaScript",
+      "Playwright",
+      "Git"
+    ],
+    "stipend": "₹7,000/month",
+    "application_url": "https://example.com/apply/qa",
+    "duration": "10 weeks",
+    "is_active": true
+  }
+]

@@ -29,4 +29,20 @@ db.exec(`
   );
 `);
 
+db.exec(`
+  CREATE TABLE IF NOT EXISTS applications (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    internship_id INTEGER NOT NULL,
+    applicant_name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    phone TEXT NOT NULL,
+    resume_url TEXT,
+    cover_letter TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime('now')),
+    FOREIGN KEY (internship_id)
+      REFERENCES internships(id)
+      ON DELETE CASCADE
+  );
+`);
+
 module.exports = db;

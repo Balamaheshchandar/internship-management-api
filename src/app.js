@@ -6,7 +6,31 @@ const internshipRoutes = require("./routes/internships");
 const { notFound, errorHandler } = require("./middleware/errors");
 const applicationRoutes = require("./routes/applications");
 
+const crypto = require("crypto");
+
 const app = express();
+
+app.use((req, res, next) => {
+  const requestId = crypto.randomUUID();
+  const startTime = Date.now();
+
+  res.setHeader("X-Request-ID", requestId);
+
+  res.on("finish", () => {
+    console.log(JSON.stringify({
+      timestamp: new Date().toISOString(),
+      level: "info",
+      requestId,
+      method: req.method,
+      path: req.path,
+      statusCode: res.statusCode,
+      durationMs: Date.now() - startTime
+    }));
+  });
+
+  next();
+});
+
 app.use(helmet());
 app.use(cors({
   origin: "http://127.0.0.1:5500",
